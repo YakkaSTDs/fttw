@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>Theotown Fan Wiki (Bahasa Indonesia)</title>
+  <meta name="title" content="Theotown Fan Wiki (Bahasa Indonesia)" />
+  <meta name="description" content="Wiki ini adalah wiki penggemar berbahasa Indonesia yang berisi terjemahan, informasi dari sumber resmi, pengalaman bermain, serta tambahan dari komunitas." />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Theotown Fan Wiki (Bahasa Indonesia)" />
+  <meta property="og:description" content="Wiki ini adalah wiki penggemar berbahasa Indonesia yang berisi terjemahan, informasi dari sumber resmi, pengalaman bermain, serta tambahan dari komunitas." />
+  
+  <!-- X (Twitter) -->
+  <meta property="twitter:title" content="Theotown Fan Wiki (Bahasa Indonesia)" />
+  <meta property="twitter:description" content="Wiki ini adalah wiki penggemar berbahasa Indonesia yang berisi terjemahan, informasi dari sumber resmi, pengalaman bermain, serta tambahan dari komunitas." />
+  
+  <!-- Meta Tags Generated with https://metatags.io -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code:wght@400;500;600&family=M+PLUS+Rounded+1c:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons (icons only) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --fg: #9fd3ff;
+      --fg-dim: #6fa8d6;
+      --border: #1c3347;
+      --accent: #b6e3ff;
+
+      --info: #4fc3f7;
+      --warn: #ffcc80;
+      --danger: #ef9a9a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+    
+    img,svg {
+      max-width: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 1.2rem;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "M PLUS Code", monospace;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1, h2, h3 {
+      font-family: "M PLUS Rounded 1c", sans-serif;
+      color: var(--accent);
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .summary-box {
+      border: 1px solid var(--border);
+      padding: 0.9rem;
+      margin-bottom: 1.4rem;
+      background: rgba(0, 0, 0, 0.25);
+    }
+
+    details {
+      border: 1px solid var(--border);
+      margin-bottom: 0.85rem;
+      padding: 0.6rem 0.8rem;
+      background: rgba(0, 0, 0, 0.18);
+    }
+
+    details[open] {
+      border-color: var(--accent);
+    }
+
+    summary {
+      list-style: none;
+      cursor: pointer;
+      font-family: "M PLUS Rounded 1c", sans-serif;
+      font-size: 1.05rem;
+      color: var(--accent);
+      padding-bottom: 0.3rem;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details[open] summary {
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 0.6rem;
+    }
+
+    details p,
+    details ul {
+      margin: 0.6rem 0 0;
+    }
+
+    ul {
+      padding-left: 1.1rem;
+    }
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-decoration-style: dashed;
+      text-underline-offset: 3px;
+    }
+    
+    a:hover {
+      color: #e0f4ff;
+      text-decoration-style: solid;
+    }
+
+    /* Message boxes */
+    .box {
+      margin-top: 0.8rem;
+      padding: 0.6rem 0.75rem;
+      border-left: 3px solid;
+      background: rgba(0, 0, 0, 0.35);
+      font-size: 0.95rem;
+      display: flex;
+      gap: 0.5rem;
+      align-items: flex-start;
+    }
+
+    .box i {
+      font-size: 1.1rem;
+      line-height: 1.3;
+    }
+
+    .info {
+      border-color: var(--info);
+      color: var(--info);
+    }
+
+    .warning {
+      border-color: var(--warn);
+      color: var(--warn);
+    }
+
+    .danger {
+      border-color: var(--danger);
+      color: var(--danger);
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.8rem;
+      color: var(--fg-dim);
+      border-top: 1px solid var(--border);
+      padding-top: 0.9rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: space-between;
+    }
+    
+    footer a {
+      color: var(--fg-dim);
+      text-decoration: underline;
+    }
+    
+    footer a:hover {
+      color: var(--accent);
+    }
+    
+    #search {
+      width: 100%;
+      padding: 0.5rem 0.6rem;
+      margin-bottom: 1rem;
+      background: rgba(0,0,0,0.3);
+      border: 1px solid var(--border);
+      color: var(--fg);
+      font-family: inherit;
+    }
+    
+    #search::placeholder {
+      color: var(--fg-dim);
+    }
+    
+    #search-info {
+      font-size: 0.8rem;
+      color: var(--fg-dim);
+      margin: -0.5rem 0 1rem;
+    }
+
+    /* Mobile optimizations */
+    @media (max-width: 600px) {
+      body {
+        padding: 0.9rem;
+      }
+
+      h1 {
+        font-size: 1.45rem;
+      }
+
+      summary {
+        font-size: 1rem;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Theotown Fan Wiki</h1>
+
+    <div class="summary-box">
+      <h2>Ringkasan</h2>
+      <p>
+        <strong>Theotown</strong> adalah game simulasi pembangunan kota dengan gaya klasik, di mana pemain mengatur tata kota, ekonomi, transportasi, dan layanan publik sesuai gaya bermain masing-masing.<br><br>Wiki ini adalah wiki penggemar berbahasa Indonesia yang berisi terjemahan, informasi dari sumber resmi, pengalaman bermain, serta tambahan dari komunitas.
+      </p>
+      <div class="box info">
+        <i class="bi bi-info-circle"></i>
+        <span>Demi kecepatan publikasi,banyak fitur atau konten yang belum selesai pembuatannya dan masih hanya teks saja. Tidak ada gambar detail pada beberapa bagian.</span>
+      </div>
+    </div>
+    <input
+      type="search"
+      id="search"
+      placeholder="Cari topik atau kata kunci..."
+      aria-label="Pencarian wiki"
+    />
+    
+    <div id="search-info">
+      Menampilkan semua topik.
+    </div>
+
+    <details data-alt="">
+      <summary>Server Discord</summary>
+      <div class="box info">
+        <i class="bi bi-info-circle"></i>
+        <span>Jika anda pemilik server dan ingin menambahkan atau menghapus server anda dari daftar berikut,kontak Yakka via Discord atau Whatsapp.</span>
+      </div>
+      <div class="box warning">
+        <i class="bi bi-exclamation-triangle"></i>
+        <span>Untuk menggunakan discord,minimal 13 tahub keatas dengan alasan eula dan tos mereka.</span>
+      </div>
+      <ul>
+        <li><a href="https://discord.gg/theotown">Theotown Resmi</a></li>
+        <li><a href="https://discord.gg/KzzaRkGc2W">//Potato's (Slash Potato)</a></li>
+        <li><a href="https://discord.gg/WEgX6CA7Hs">FTTI (Forum Theotown Indonesia)</a></li>
+        <li><a href="https://discord.gg/rC2hcw9RaC">Эrionite's (Arangasit)</a></li>
+        <li><a href="https://discord.gg/qMSVMJ33WM">Emeraldo</a></li>
+        <li><a href="https://discord.gg/s79HDCrSDe">BurgerHam Burger Joint</a></li>
+        <li><a href="https://discord.gg/wM2GEuEDUq">Österstadt</a></li>
+        <li><a href="https://discord.gg/FdNAZnwWd3">The Leaf Community</a></li>
+        <li><a href="https://discord.gg/FnGGuwWatC">Komunitas Arsip Theotown</a></li>
+        <li><a href="https://discord.gg/9cxRBhkWmG">Industri Kompleks</a></li>
+        <li><a href="https://discord.com/invite/Z5pX4bybH6">Kamikaze Hellhole</a></li>
+        <li><a href="https://discord.gg/WMRgTy39Zx">KRI (KTTCAPI)</a></li>
+        <li><a href="https://discord.com/invite/aUTxvP4tP3">Klub Hadestia</a></li>
+        <li><a href="https://discord.com/invite/SvqPnWggNp">VPS (Vonark Plugin Server)</a></li>
+        <li><a href="https://discord.com/invite/yq43znGhMx">Matfil-15</a></li>
+        <li><a href="https://discord.com/invite/fwbQRzSTJP">1Code (Jeremiah)</a></li>
+        <li><a href="https://discord.com/invite/VvTUajnbAp">Boss Gxng</a></li>
+        <li><a href="https://discord.com/invite/xMkh4jm6g5">Sprot Plugin Server</a></li>
+        <li><a href="https://discord.com/invite/K8jXpH8uA6">Slavic Plugin Market</a></li>
+        <li><a href="https://discord.com/invite/fZmvXXaWXR">Timelapse Video</a></li>
+        <li><a href="https://discord.gg/UDWPMKe7bK">Strycedar Multiverse</a></li>
+        <li><a href="https://discord.gg/q3wMPwD6Xw">Naciones De Theotown (RP)</a></li>
+        <li><a href="https://discord.com/invite/DAJx8s8B3g">Tower of Darkness</a></li>
+        <li><a href="https://discord.com/invite/NctNbVX4Sw">Re-Panas Inc.</a></li>
+        <li><a href="https://discord.gg/qnx5YDjDg7">Yakka Plugin Center</a></li>
+        <li><a href="https://discord.gg/QFWK6Sdpqs">Theotown RP</a></li>
+        <li><a href="https://discord.gg/qHX2GVKGxP">Pidroid</a></li>
+        <li><a href="https://discord.gg/jA7XfJ9qrA">Erksmith Swamp Office</a></li>
+        <li><a href="https://discord.gg/WFaqDxQgkX">Cosejo Latinoamericano de Plugins</a></li>
+        <li><a href="https://discord.gg/6R2rU9fSdj">OBSI and Rap's Planes and Plugins</a></li>
+        <li><a href="https://discord.gg/EsGUYQpFTZ">Wandrox Plugin Platform</a></li>
+        <li><a href="https://discord.gg/YJdak6vzgr">TCPS HQ</a></li>
+        <li><a href="https://discord.gg/H5fKD758q7">Marcato's Community</a></li>
+        <li><a href="https://discord.gg/Kv2fGXUbp9">Ayakucing</a></li>
+        <li><a href="https://discord.gg/aQKYq6zqSa">Miuku</a></li>
+        <li><a href="https://discord.gg/JWGg2Ejy3g">Yan-J</a></li>
+        <li><a href="https://discord.gg/Qj8kdeFzfF">Ren's Wilderness</a></li>
+        <li><a href="https://discord.gg/KUZFCxRpbk">Logvyn</a></li>
+        <li><a href="https://discord.gg/ChBTsU7pvG">Cyro Galatic</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+
+    </details>
+    <details data-alt="">
+      <summary>Grup/Saluran/Komunitas Whatsapp</summary>
+      <div class="box info">
+        <i class="bi bi-info-circle"></i>
+        <span>Jika anda pemilik Grup,Saluran,atau Komunitas dan ingin menambahkan atau menghapus server anda dari daftar berikut,kontak Yakka via Discord atau Whatsapp.</span>
+      </div>
+      <p>Untuk saat ini masih kosong,segera hadir. 😉</p>
+    </details>
+    <details data-alt="">
+      <summary>Plugin Populer/Sering Dicari</summary>
+      <div class="box warning">
+        <i class="bi bi-exclamation-triangle"></i>
+        <span>Mohon diperhatikan bahwa sesuai dengan Undang-Undang Nomor 28 Tahun 2014 tentang Hak Cipta, setiap bentuk distribusi plugin dari grup/siaran WhatsApp tanpa izin yang sah adalah tindakan yang melanggar hukum. Pelanggaran hak cipta dapat dikenakan sanksi hukum.</span>
+      </div>
+      <div class="box warning">
+        <i class="bi bi-exclamation-triangle"></i>
+        <span>Belum ada thumbnail karena kendala kecepatan publikasi.</span>
+      </div>
+      <ul>
+        <li><a href="https://forum.theotown.com/search.php?author_id=922&fid%5B%5D=43&sc=1&sr=topics&sk=t&sf=firstpost">mdk_813</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1OpRpSXAwFvQhtjEGxmUQA0QjwUWPdNCq">Yusuf8a684</a></li>
+        <li><a href="https://forum.theotown.com/search.php?author_id=4615&fid%5B%5D=43&sc=1&sr=topics&sk=t&sf=firstpost">Rockfort</a></li>
+        <li><a href="https://github.com/KINGTUT10101/TheoTownPlugins">KINGTUT10101</a></li>
+        <li><a href="https://forum.theotown.com/viewtopic.php?t=25687">Chipper</a></li>
+        <li><a href="https://discord.gg/9cxRBhkWmG">Complex Industry</a></li>
+        <li><a href="https://forum.theotown.com/viewtopic.php?t=11222">Some Beach Decoration</a></li>
+        <li><a href="https://forum.theotown.com/viewtopic.php?t=12530">China Railways</a></li>
+        <li><a href="https://forum.theotown.com/viewtopic.php?t=3586">Breakwater</a></li>
+        <li><a href="https://discord.com/invite/ymqzpbWtzK">IKN</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+      <a href="#">Cara Pasang ada disini.</a>
+      <p>Untuk saat ini masih kosong.</p>
+    </details>
+    <details data-alt="">
+      <summary>Age of Sail (AOS)</summary>
+      <p><strong>Mengapa ini terjadi?</strong><br>
+      Pengembang TheoTown telah membuat perubahan besar pada kode hak istimewa plugin di versi terbaru, sehingga plugin lama menjadi tidak kompatibel dengan versi terbaru, yang menyebabkan error.<br><br>
+      <strong>Apakah ada solusinya?</strong><br>
+      Ya, tetapi hanya ada satu pilihan sulit: gunakan TheoTown versi sebelum 1.11.78 lebih baik versi di bulan april 2022.. Namun, perlu diingat bahwa jika Anda melakukannya, Anda tidak akan mendapatkan konten TheoTown terbaru. Juga perlu diingat bahwa menghapus instalasi theotown sama saja menghapus data kecuali anda login akun forum atau Facebook. <a href="https://github.com/TheoTown-Team/translations/releases">APK versi lama Theotown</a>.<br><br>
+      <strong>Apakah AOS akan di-update, dan kapan?</strong><br>
+      Tidak, plugin AOS tidak akan di-update. Pengembang plugin AOS sudah pensiun dari pengembangan plugin TheoTown sejak tahun 2022. Mohon pengertiannya, jika Anda memiliki kontak dengan pengembang tersebut, bahwa mereka berhak menolak permintaan Anda, jadi jangan kecewa. </p><br><br>
+      <a href="https://github.com/TPhil-Corp/Age-of-Sail/releases">Saya mengetahui resiko dan tetap akan mengunduhnya.</a>
+    </details>
+    
+    <details data-alt="">
+      <summary>Cara Pasang Plugin (zip,plugin,ttplugin)</summary>
+      <div class="box info">
+        <i class="bi bi-info-circle"></i>
+        <span>Spesifik untuk sistem operasi android.</span>
+      </div>
+      <ol>
+        <li>Buka ikon gir di menu wilayah (kalau pas main kota gak bakal muncul,harus keluar kota dulu)</li>
+        <li>Pilih file manager</li>
+        <li>Folder Plugins</li>
+        <li>Tombol Impor Disini</li>
+        <li>Pilih Berkas/File</li>
+        <li>Cari file zip,plugin,ttplugin dari plugin yang ingin dipasang.</li>
+        <li>Restart Game</li>
+      </ol>
+    </details>
+    <details data-alt="">
+      <summary>Cara Pasang Plugin (mpf)</summary>
+      <div class="box info">
+        <i class="bi bi-info-circle"></i>
+        <span>Spesifik untuk sistem operasi android.</span>
+      </div>
+      <div class="box warning">
+        <i class="bi bi-exclamation-triangle"></i>
+        <span>Khusus versi dibawah 1.11.xx saja,versi terbaru gak work!</span>
+      </div>
+      <ol>
+        <li>Buka ikon gir di menu wilayah (kalau pas main kota gak bakal muncul,harus keluar kota dulu)</li>
+        <li>Pilih file manager</li>
+        <li>Tombol pengaturan/settings</li>
+        <li>Folder managed plugins</li>
+        <li>Tombol Impor Disini</li>
+        <li>Pilih Berkas/File</li>
+        <li>Cari file mpf dari plugin yang ingin dipasang.</li>
+        <li>Restart Game</li>
+      </ol>
+    </details>
+    <details data-alt="">
+      <summary>Ekspor/Impor Wilayah</summary>
+      <div class="box info">
+        <i class="bi bi-info-circle"></i>
+        <span>Spesifik untuk sistem operasi android.</span>
+      </div>
+      <ol>
+        <li>Buka ikon gir di menu wilayah (kalau pas main kota gak bakal muncul,harus keluar kota dulu)</li>
+        <li>Pilih file manager</li>
+        <li>Folder regions</li>
+        <li>Tombol Impor Disini</li>
+        <li>Pilih Folder</li>
+        <li>Cari file zip wilayah.</li>
+        <li>Ekstrak zip</li>
+        <li>Pilih folder wilayah yang di ekstrak</li>
+        <li>Restart Game</li>
+      </ol>
+      <p>Untuk Export bisa menggikuti hingga step 3,dilajutkan dengan:</p>
+      <ol>
+        <li>Pilih Actions/Aksi pada folder wilayah</li>
+        <li>Pilih ekspor</li>
+      </ol>
+    </details>
+    <details data-alt="">
+      <summary>Ekspor/Impor Kota Satuan</summary>
+      <div class="box info">
+        <i class="bi bi-info-circle"></i>
+        <span>Spesifik untuk sistem operasi android.</span>
+      </div>
+      <ol>
+        <li>Buka ikon gir di menu wilayah (kalau pas main kota gak bakal muncul,harus keluar kota dulu)</li>
+        <li>Pilih file manager</li>
+        <li>Folder maps</li>
+        <li>Tombol Impor Disini</li>
+        <li>Pilih Folder</li>
+        <li>Cari file .city kota.</li>
+        <li>Pilih file tersebut</li>
+        <li>Restart Game</li>
+      </ol>
+      <p>Untuk Export bisa menggikuti hingga step 3,dilajutkan dengan:</p>
+      <ol>
+        <li>Pilih Actions/Aksi pada file kota</li>
+        <li>Pilih ekspor</li>
+      </ol>
+    </details>
+    <details data-alt="">
+      <summary>Membuat Wilayah/Kota berdasar peta</summary>
+      <p><strong>Membuat Region Mirip Dunia Nyata dengan Heightmap</strong></p>
+      
+      <p>Ingin membuat region yang menyerupai lokasi nyata di dunia? Gunakan <strong>heightmap</strong>.</p>
+      
+      <p><strong>Langkah-langkah</strong></p>
+      
+      <ol>
+        <li>Buka <a href="https://tangrams.github.io/heightmapper/">situs ini</a> lalu cari lokasi yang kamu inginkan.</li>
+        <li>Pastikan warna sudah benar:
+          <ul>
+            <li>Hitam akan menjadi air</li>
+            <li>Putih akan menjadi perbukitan / dataran tinggi</li>
+          </ul>
+        </li>
+        <li>Ambil screenshot dan ubah namanya (contoh: <code>example.jpg</code>).</li>
+        <li>Masukkan gambar tersebut ke folder utama TheoTown (jangan ke subfolder).</li>
+        <li>Buka <strong>region generator</strong>, lalu ketik nama gambar tadi (misalnya <code>example.jpg</code>).</li>
+        <li>Nikmati region kustom buatanmu.</li>
+      </ol>
+      
+      <p><strong>Daftar Seed Siap Pakai</strong></p>
+      
+      <p><em>Seed tidak sensitif huruf besar/kecil.</em></p>
+      
+      <p><strong>Seed “Only”</strong></p>
+      
+      <ul>
+        <li><code>grassonly</code> — hanya rumput</li>
+        <li><code>sandonly</code> — hanya pasir</li>
+        <li><code>snowonly</code> — hanya salju</li>
+        <li><code>wateronly</code> — hanya air</li>
+      </ul>
+      
+      <p><strong>Seed Lokasi Dunia Nyata</strong></p>
+      
+      <ul>
+        <li><code>Earth</code> — peta bumi tanpa Oseania</li>
+        <li><code>USA</code> — Amerika Serikat</li>
+        <li><code>Unitedkingdom</code> — Inggris</li>
+        <li><code>Washington</code> — Washington</li>
+        <li><code>Vesuvius</code> — Gunung Vesuvius</li>
+        <li><code>Tokyo</code> — Tokyo</li>
+        <li><code>Taal</code> — Gunung Taal</li>
+        <li><code>Stuttgart</code> — Stuttgart</li>
+        <li><code>Stuckenborstel</code> — Stuckenborstel (lokasi nyata)</li>
+        <li><code>Shanghai</code> — Shanghai</li>
+        <li><code>Sanfrancisco</code> — San Francisco</li>
+        <li><code>Petersburg</code> — St. Petersburg</li>
+        <li><code>Newyork</code> — New York</li>
+        <li><code>Nauru</code> — Nauru</li>
+        <li><code>Korea</code> — Semenanjung Korea</li>
+        <li><code>Kyushu</code> — Kyushu</li>
+        <li><code>Honshu</code> — Jepang (Honshu)</li>
+        <li><code>Hongkong</code> — Hong Kong</li>
+        <li><code>Grandcanyon</code> — Grand Canyon</li>
+        <li><code>Galapagos</code> — Kepulauan Galapagos</li>
+        <li><code>Fuji</code> — Gunung Fuji</li>
+        <li><code>Everest</code> — Himalaya (area Everest)</li>
+        <li><code>Easterisland</code> — Pulau Paskah</li>
+        <li><code>Dalian</code> — Dalian</li>
+        <li><code>Cologne</code> — Cologne</li>
+        <li><code>Caspiansea</code> — Laut Kaspia dan sekitarnya</li>
+        <li><code>Bournemouth</code> — Bournemouth</li>
+        <li><code>Bali</code> — Bali</li>
+        <li><code>Allearth</code> — peta bumi termasuk Oseania</li>
+        <li><code>Aegeanislands</code> — Kepulauan Aegea</li>
+      </ul>
+      
+      <p><strong>Lainnya</strong></p>
+      
+      <ul>
+        <li><code>RemainsStay</code> — gambar seekor sloth 🦥</li>
+        <li><code>JustAnyone</code> — wajah JA</li>
+        <li><code>Flat</code> — peta datar polos</li>
+      </ul>
+    </details>
+    
+    <details data-alt="">
+      <summary>Berkas Manifest Tidak Ditemukan</summary>
+      <p>Peringatan <span>Missing manifest file.</span> secara sederhana <b>tidak perlu dihiraukan. Namun, perlu dicatat bahwa plugin tanpa plugin manifest tidak dapat digunakan pada wilayah online atau multipemain.</b> Peringatan ini ditujukan kepada pembuat plugin, bukan pemain biasa seperti Anda.</p>
+    </details>
+    <details data-alt="">
+      <summary>Plugin Tidak Muncul</summary>
+      <img src="img/ctg.png">
+      <p>Tidak semua plugin akan muncul di kategori plugin. Memang, kategori ini memudahkan pemain untuk mencari sesuatu berdasarkan plugin. Namun, plugin di luar store terkadang tidak tercantum di sana. <b>Anda bisa mencari konten plugin di kategori masing-masing. Contohnya, jika plugin berisi dekorasi, carilah di kategori dekorasi game.</b></p>
+    </details>
+    <details data-alt="">
+      <summary>Kebijakan Skrip</summary>
+      <img src="img/scp.png">
+      <p>Peringatan <span>Script Policy</span> secara sederhana adalah opsi bagi pemain untuk memilih script plugin mana yang diperbolehkan. Beberapa plugin memiliki kode Lua.</p>
+    </details>
+    
+    <details data-alt="">
+      <summary>Rekomendasi Plugin (Oleh DualHD)</summary>
+      <p>Daftar Rekomendasi plugin oleh DualHD (Catatan,Jika kamu tidak menemukan plugin yang ada di daftar,besar kemungkinan itu plugin privat atau telah dihapus):</p>
+      <ul>
+        <li>German Houses | oleh vönark (vps server)</li>
+        <li>Munich Airport | oleh vönark (vps server)</li>
+        <li>Austrian Buildings | oleh vönark (vps server)</li>
+        <li>Saint Petersburg Buildings v2 | oleh vönark (vps server)</li>
+        <li>Dutch buildings | oleh vönark (vps server)</li>
+        <li>NewBau | oleh vönark (vps server)</li>
+        <li>Swedish buildings | oleh vönark (vps server)</li>
+        <li>La Defense | oleh vönark (vps server)</li>
+        <li>White Square | oleh vönark (vps server)</li>
+        <li>Turning Torso | oleh vönark (vps server)</li>
+        <li>Modern (euro) building pack | oleh Some SC4 Fan (Plugin store)</li>
+        <li>Amsterdam Prinsengracht | oleh a Dutch Guy (forum)</li>
+        <li>Moscow historical buildings | oleh arangasit (Plugin store)</li>
+        <li>Verona historical buildings | oleh arangasit (Plugin Store)</li>
+        <li>Le Havre panel buildings | oleh arangasit (Plugin store)</li>
+        <li>Copenhagen historica buildings | oleh arangasit (Plugin Store)</li>
+        <li>Soviet residential buildings | oleh arangasit (Plugin store)</li>
+        <li>Le Havre MegaPack | oleh RockFort (forum)</li>
+        <li>French Buildings Pack (2.1.2) | oleh RockFort (forum)</li>
+        <li>French Houses Pack #2 | oleh RockFort (forum)</li>
+        <li>Palais Bénédictine | oleh RockFort (forum)</li>
+        <li>Warsaw Palace of Culture and Science | oleh RockFort (forum)</li>
+        <li>French Elementary School | oleh RockFort (forum)</li>
+        <li>French Public Housing Projects Pack | oleh RockFort (forum)</li>
+        <li>Musée des Pêcheries, Fécamp | oleh RockFort (forum)</li>
+        <li>Modulable French House | oleh RockFort (forum)</li>
+        <li>Mairie de Fécamp | oleh RockFort (forum)</li>
+        <li>Gare de Rouen Rive-Droite | oleh RockFort (forum)</li>
+        <li>Netherlands Middle School | oleh RockFort (forum)</li>
+        <li>Saint Nicolas Church, Ljubljana | oleh RockFort (forum)</li>
+        <li>Western Railway Station, Budapest | oleh RockFort (forum)</li>
+        <li>Eco-Towers pack (Occitanie Tower) | oleh RockFort (forum)</li>
+        <li>Notre Dame de Paris Cathedral | oleh RockFort (forum)</li>
+        <li>THE SHARD | oleh Dekuz (Plugin store)</li>
+        <li>De Rotterdam | oleh Dekuz (Plugin store)</li>
+        <li>Wohnpark Alt-Erlaa | oleh Dekuz (Plugin store)</li>
+        <li>Guggenheim museum bilbao | oleh Dekuz (Plugin store)</li>
+        <li>Modern Building Package | oleh Dekuz (Plugin store)</li>
+        <li>Hungarian auto club HQ | oleh Dekuz (Plugin store)</li>
+        <li>Winter Palace | oleh võnark (vps server)</li>
+        <li>Frankfurt building pack | oleh võnark (vps server)</li>
+        <li>City of London pack | oleh võnark (vps server)</li>
+        <li>Churches | oleh võnark (Plugin store)</li>
+        <li>Westminster Palace | oleh CERRERA (Plugin store)</li>
+        <li>Palace Potocki | oleh Österschmirtz (Plugin store)</li>
+        <li>Oslo Royal Palace | oleh Österschmirtz (Plugin store)</li>
+        <li>Victorian Train Station | oleh Österschmirtz (Plugin store)</li>
+        <li>Tour des Archives, Rouen | oleh Imran M (Plugin store)</li>
+        <li>Munich New City Hall | oleh TCPS TEAM (Plugin store)</li>
+        <li>Gothic Cathedral | oleh TCPS TEAM (Plugin store)</li>
+        <li>Jakarta Cathedral | oleh Lukasbeenhere (Plugin store)</li>
+        <li>Parliament of Budapest | oleh kekman (Plugin store)</li>
+        <li>Messeturm Frankfurt | oleh kekman (Plugin store)</li>
+        <li>Floreasca Sky Tower Bucuresti | oleh kekman (Plugin store)</li>
+        <li>Cologne Cathedral | oleh kekman (Plugin store)</li>
+        <li>Modulable Shopping Centre | oleh Ttownlover (Plugin store)</li>
+        <li>PWC HQ. Oslo | oleh Ttownlover (Plugin store)</li>
+        <li>Warsaw Trade Tower | oleh Marco Handres (Plugin Store)</li>
+        <li>Hotel Intercontinental Warsaw | oleh Marco Handres (Plugin store)</li>
+        <li>The Crystal Palace | oleh tochiito (Plugin store)</li>
+        <li>Cinerama Movie Theatre | oleh tochiito (Plugin store)</li>
+        <li>The Wedding Tower | oleh tochiito (Plugin store)</li>
+        <li>The Leaf Factory Pack | oleh The Leaf (LPC server)</li>
+        <li>The Leaf Construction Props Pack | oleh The Leaf (LPC server)</li>
+        <li>PBZ Bank | oleh KMr06 (Plugin store)</li>
+        <li>The Landmark | oleh KMr06 (Plugin store)</li>
+        <li>The MARQ | oleh KMr06 (Plugin store)</li>
+        <li>Estella tower | oleh KMr06 (Plugin store)</li>
+        <li>CJ Tower | oleh KMr06 (Plugin store)</li>
+        <li>VN-PRDC | oleh KMr06 (Plugin store)</li>
+        <li>The Landmark | oleh KMr06 (Plugin store)</li>
+        <li>International Financial Center | oleh KMr06 (Plugin store)</li>
+        <li>Rietpark Building | oleh Walmart Employee (Plugin store)</li>
+        <li>Thamrin Nine Tower | oleh NTTPC (Plugin store)</li>
+        <li>Astra Tower | oleh matthewfilbert15 (Plugin store)</li>
+        <li>Prague Buildings | oleh zaaron (LPC server)</li>
+        <li>National Diet Library | oleh zaaron (Plugin store)</li>
+        <li>Kaunas Town Hall | oleh zaaron (Plugin store)</li>
+        <li>Fischauktionshalle | oleh zaaron (Plugin store)</li>
+        <li>Service Expansion | oleh Loboleh (Plugin store)</li>
+        <li>European Buildings Expansion | oleh Loboleh (Plugin store)</li>
+        <li>Residential Expansion | oleh Loboleh (Plugin store)</li>
+        <li>Kulche's Advanced Architecture | oleh Kulche (Plugin store)</li>
+        <li>The Maj Dago | oleh RM0419 (Plugin store)</li>
+        <li>brussels buildings | oleh ifeelgood (Plugin store)</li>
+        <li>soviet buildings | oleh ifeelgood (Plugin store)</li>
+      </ul>
+      <hr />
+      <p>Plugin terkait jalan:</p>
+      <ul>
+        <li>Traffic Lights</li>
+        <li>Slow Traffic Package</li>
+        <li>Road Markings Package</li>
+        <li>Curb plugin</li>
+        <li>Indonesia transport pack (for the lines)</li>
+        <li>LeoPolis Road Deco Pack</li>
+        <li>Road stripes (Forum)</li>
+        <li>Alpha Mega DanDM Plugin (Potato Server)</li>
+        <li>Advanced Road</li>
+        <li>Road stripes</li>
+        <li>Diagonal Crossing</li>
+        <li>Red line</li>
+        <li>(one way)street light</li>
+        <li>road sign</li>
+        <li>Roadside Trees</li>
+        <li>Road damages</li>
+        <li>Leopolis Road Deco Pack (Beta)</li>
+        <li>Non-Stopping Strips. Crossings</li>
+        <li>i13 Road Pack</li>
+        <li>Philippines Road Pack</li>
+        <li>Custom Roads</li>
+        <li>Erin's Road Additions</li>
+        <li>Cobblestone roads (Forum)</li>
+        <li>One-way diagonals (DM me for the files, the author is perfectly fine with sharing it)</li>
+        <li>Complex industries (for the dirt roads)</li>
+        <li>Bus Lane</li>
+        <li>Invisible road</li>
+        <li>One lane street</li>
+        <li>Bike lane</li>
+        <li>Bridge highway and expressway</li>
+        <li>Alley</li>
+        <li>New Interchanges And Road v1.7</li>
+        <li>Futuristic Road Pack V5.1</li>
+        <li>School Zone Road</li>
+        <li>Mud Tracks</li>
+        <li>One Lane roads</li>
+        <li>Rural Roads (Diagonal)</li>
+      </ul>
+      <p>Misc Road related plugins :</p>
+      <ul>
+        <li>River with sidewalk</li>
+        <li>Bus stop decoration updated</li>
+        <li>Bridge decorations</li>
+        <li>Bridge Frames</li>
+      </ul>
+      <hr />
+      <p>Tree/Nature related plugins DualHD use:</p>
+      <ul>
+        <li>Spruce Trees oleh The26</li>
+        <li>Lilac bushes oleh The26</li>
+        <li>Birch Trees oleh The26</li>
+        <li>Rowan Trees oleh The26</li>
+        <li>Japanese shrine decoration oleh Kai's work</li>
+        <li>Nature Pack oleh võnark</li>
+        <li>Autumn Trees oleh võnark (vps server)</li>
+        <li>Just Trees oleh Österschmirtz</li>
+        <li>Bus lane oleh Wikipeder (the trees)</li>
+        <li>Some SC4 Fan's Trees (v2) oleh Some SC4 Fan's</li>
+      </ul>
+      <p>Credit to <b>DualHD</b></p>
+    </details>
+    <details data-alt="">
+      <summary>Membaca Grafik Permintaan</summary>
+      <img src="img/Demands_Requirements.png" alt="" loading="lazy">
+      <p>Klik ikon grafik batang di sisi kiri layar untuk melihat demand. Tampilan grafik ini mirip dengan kotak di kiri atas pada gambar referensi.</p>
+      <ul>
+        <li>Jika batang berada di atas garis, artinya banyak orang ingin pindah ke zona tersebut → tambah/zoning lebih banyak zona itu.</li>
+        <li>Jika batang berada di bawah garis, artinya zona tersebut membutuhkan layanan dan fasilitas tambahan.</li>
+      </ul>
+      <p>Kebutuhan layanan untuk setiap jenis zona dan level kekayaan bisa dilihat pada gambar referensi di bawah.</p>
+      <p><strong>Sandbox Mode</strong><br>Di Sandbox Mode, demand bisa dimanipulasi sebagian.</p>
+      <ul>
+        <li>Buka grafik demand, lalu gunakan tombol + atau - untuk menaikkan atau menurunkan demand.</li>
+        <li>Garis demand yang penuh tidak otomatis membuat penduduk masuk.</li>
+        <li>Kamu tetap harus menyediakan layanan yang dibutuhkan agar populasi bisa bertambah.</li>
+      </ul>
+      <p><strong>Catatan:</strong><br>Jika semua kebutuhan sudah terpenuhi, tinggi garis demand menentukan seberapa cepat penduduk akan pindah ke zona tersebut.</p>
+      <p><strong>Keterangan Ikon</strong><br>Ikon pada gambar menunjukkan kebutuhan layanan berikut (urut dari kiri ke kanan) untuk zona residential:</p>
+      <ul>
+        <li>Listrik</li>
+        <li>Air</li>
+        <li>Polisi</li>
+        <li>Damkar</li>
+        <li>Kesehatan</li>
+        <li>Taman</li>
+        <li>Pendidikan Dasar</li>
+        <li>Pendidikan lanjutan</li>
+        <li>Olahraga</li>
+      </ul>
+    </details>
+    <details data-alt="">
+      <summary>Memperbaiki Kemacetan</summary>
+      <p><strong>Direktori Lalu Lintas</strong></p>
+      
+      <p>Bagian ini berisi beberapa tips tentang cara kerja lalu lintas dan bagaimana merancang kota berdasarkan perilaku tersebut.</p>
+      
+      <p><strong>Alur Lalu Lintas</strong></p>
+      
+      <p>Penduduk membutuhkan jalur yang <strong>cepat dan efisien</strong> dari titik A ke titik B. AI akan memilih <strong>jalur terpendek</strong>, bukan yang paling cepat.</p>
+      
+      <ul>
+        <li>Residential → Commercial & Industrial (penduduk berangkat kerja)</li>
+        <li>Industrial → Commercial (barang dikirim ke toko)</li>
+        <li>Commercial → Industrial (truk kembali ke pabrik asal)</li>
+        <li>Industrial & Commercial → Residential (penduduk pulang ke rumah)</li>
+      </ul>
+      
+      <p><strong>Tips Tata Letak Kota</strong></p>
+      
+      <ul>
+        <li>Zona <strong>Industrial dan Commercial</strong> sebaiknya dekat dengan <strong>jalan utama</strong> agar mudah diakses dari seluruh kota.</li>
+        <li>Zona <strong>Residential</strong> sebaiknya dekat dengan <strong>Commercial</strong>, namun agak jauh dari <strong>Industrial</strong> karena polusi.</li>
+        <li>Gunakan kombinasi jalan <strong>satu arah</strong> dan <strong>dua arah</strong> di zona Residential untuk menjaga lalu lintas tetap rapi.</li>
+      </ul>
+      
+      <p>Berikut contoh tata letak kota yang <em>bisa</em> kamu gunakan sebagai referensi:</p>
+      
+      <p>
+      <img src="img/trd.png" alt="" loading="lazy">
+      </p>
+    </details>
+    <details data-alt="">
+      <summary>Memperbaiki Permainan Ngelag</summary>
+      <img src="img/lag.png">
+      <p>
+        Pergi ke pengaturan,lalu cari pengaturan diatas.
+        <ol>
+          <li>Matikan zoom halus di kontrol</li>
+          <li>Gunakkan mode hemat energi jika masih lag</li>
+          <li>Gunakan mode hemat energibplus jika tetap masih lag</li>
+        </ol>
+      </p>
+    </details>
+    <details data-alt="">
+      <summary>Cara Ke Bulan (Dan Kembali)</summary>
+      <p>Bingung dengan cara kerja DSA? Cek <a href="https://www.youtube.com/watch?v=FkjfvGCFWP8">video ini</a>. Ingin tahu cara meningkatkan suplai roket?<br><br>Pastikan kamu membangun industri minyak di sekitar landasan roket. Contoh bangunan ada pada gambar di bawah ini.</p>
+      <img src="img/dsa.jpg" alt="" loading="lazy">
+      <p>Untuk kembali ke bulan,bisa cek kota satuan.</p>
+    </details>
+    <details data-alt="">
+      <summary>Cara Klaim Kode Redeem</summary>
+      <img src="img/rdm.png" alt="" loading="lazy">
+      <p>Kode publik: <code>chrs05</code> dan <code>windah</code><br><br>Kode wajib huruf kecil semua.</p>
+    </details>
+    <details data-alt="">
+      <summary>Kebahagiaan Budaya</summary>
+      <img src="img/bdy1.png" alt="" loading="lazy">
+      <img src="img/bdy2.jpg" alt="" loading="lazy">
+      <img src="img/bdy3.png" alt="" loading="lazy">
+      <p><strong>Pengaruh Bangunan (Influence)</strong></p>
+
+      <p>Angka yang tertera di sebelah nama bangunan menunjukkan <strong>jumlah influence</strong> yang diberikan oleh bangunan tersebut.</p>
+      
+      <p>Semua bangunan yang berada di kategori <strong>Landmarks</strong> dan <strong>Awards</strong> adalah konten <strong>vanilla</strong> (bawaan game).</p>
+      
+      <p>Landmarks membutuhkan <strong>diamond</strong> untuk ditempatkan (khusus versi mobile).</p>
+      
+      <p>Plugin yang ditampilkan pada gambar hanyalah <strong>sebagian</strong> dari plugin yang dapat memberikan <strong>cultural influence</strong>.</p>
+      
+      <p>Kamu bisa menemukan lebih banyak plugin serupa di <strong>plugin store</strong>.</p>
+    </details>
+    
+    <details data-alt="">
+      <summary>Kebahagiaan Transportasi</summary>
+      <p>Untuk saat ini masih kosong. Segera hadir 😉</p>
+    </details>
+    <details data-alt="">
+      <summary>Kebahagiaan Edukasi</summary>
+      <p>Untuk saat ini masih kosong. Segera hadir 😉</p>
+    </details>
+    
+    <details data-alt="">
+      <summary>Membuat Pelabuhan Bawaan</summary>
+      <img src="img/plb.png" alt="" loading="lazy">
+      <p>Bangunan pelabuhan akan muncul,sisakan 1 petak pantai untuk bangunan pelabuhan. bangunan pelabuhan akan muncul jika ada permintaan zona industri T.</p>
+    </details>
+    <details data-alt="">
+      <summary>Perbedaan Steam & Mobile</summary>
+      <p>
+      <img src="img/pvm.jpg" alt="" loading="lazy">
+      </p>
+      <p><strong>Versi Mobile</strong></p>
+      
+      <p>Di <strong>mobile</strong>, TheoTown bisa diunduh secara gratis, tetapi memiliki <strong>microtransaction</strong>. Model permainan ini dikenal sebagai <strong>Pay To Earn (P2E)</strong>.</p>
+      
+      <p><strong>Versi Steam</strong></p>
+      
+      <p>Sementara itu di <strong>Steam</strong>, TheoTown bersifat <strong>berbayar untuk diakses</strong>, namun seluruh konten di dalam game sudah termasuk tanpa transaksi tambahan. Model ini disebut <strong>Pay To Play (P2P)</strong>.</p>
+      
+      <p><strong>Perbedaan P2E dan P2P</strong></p>
+      
+      <p>Perbedaan utama terletak pada cara pemain mengakses dan mendapatkan konten di dalam game.</p>
+    </details>
+    
+    <details data-alt="">
+      <summary>Run Out of Memory</summary>
+      <img src="img/rom.jpg" alt="" loading="lazy">
+      <p><strong>Error: java.lang.OutOfMemoryError: Java heap space</strong></p>
+      
+      <p>Error ini berarti game kehabisan memori (RAM) saat memproses aksi atau permintaan tertentu.</p>
+      
+      <p><strong>Solusi di Mobile</strong></p>
+      
+      <p>Di perangkat mobile, opsi perbaikannya cukup terbatas.</p>
+      
+      <ul>
+        <li>Tutup aplikasi lain yang berjalan di background</li>
+        <li>Pastikan hanya game yang sedang aktif</li>
+      </ul>
+      
+      <p>Cara ini bisa membantu, tapi tidak selalu menjamin error hilang.</p>
+      
+      <p><strong>Solusi di PC</strong></p>
+      
+      <p>Di PC, kamu bisa menambah batas memori yang boleh digunakan game lewat launch argument.</p>
+      
+      <p>Contoh:</p>
+      
+      <pre><code>-Xmx4G</code></pre>
+      
+      <p>Artinya, game diizinkan menggunakan hingga 4 GB RAM.</p>
+      
+      <p>Catatan penting:</p>
+      
+      <ul>
+        <li>Pastikan RAM kamu cukup tersedia</li>
+        <li>Disarankan tidak mengalokasikan lebih dari 50% total RAM sistem</li>
+      </ul>
+      
+      <p><strong>Cek Versi Java (PC)</strong></p>
+      
+      <p>Jika error masih muncul:</p>
+      
+      <ul>
+        <li>Pastikan kamu menggunakan Java 64-bit</li>
+        <li>Jika masih 32-bit, game hanya bisa memakai maksimal 2 GB RAM, berapa pun nilai -Xmx yang kamu set</li>
+      </ul>
+    </details>
+    <details data-alt="">
+      <summary>Tautan Berguna</summary>
+      <ol>
+        <li><a href="https://forum.theotown.com/viewforum.php?f=43">Plugin Forum</a></li>
+        <li><a href="https://forum.theotown.com/viewforum.php?f=82">Wiki Resmi Forum</a></li>
+        <li><a href="https://pca.svetikas.lt/">Website PCA (Plugin Creator App)</a></li>
+        <li><a href="https://doc.theotown.com/index.html">Dokumentasi Koding Lua Theotown</a></li>
+        <li><a href="https://theotown.com/forum/viewtopic.php?f=41&t=2965">Tutorial Plugin Forum</a></li>
+      </ol>
+    </details>
+    
+    <div class="summary-box">
+      <h2>Tutorial Plugin</h2>
+      <p>
+        Segera Hadir
+      </p>
+    </div>
+    
+    <details data-alt="">
+      <summary>Example Summary</summary>
+      <p>Untuk saat ini masih kosong. Segera Hadir 😉</p>
+    </details>
+
+    <footer>
+      <span>Theotown Fan Wiki • Dibuat oleh Yakka Studios • Kredit Discord Theotown Resmi</span>
+      <span>
+        <a href="https://www.youtube.com/channel/UCEtTGm4VNKK1Ajaz7yyF0gQ">Youtube</a> •
+        <a href="https://www.instagram.com/kiki012.id">instagram</a> •
+        <a href="https://saweria.co/yakka">Saweria</a> •
+        <a href="mailto:yakkastudiosofficial@gmail.com">Email Pemilik</a>
+      </span>
+    </footer>
+  </div>
+<script>
+  const searchInput = document.getElementById("search");
+  const entries = document.querySelectorAll("details");
+  const info = document.getElementById("search-info");
+
+  const total = entries.length;
+
+  // simpan state awal
+  entries.forEach(entry => {
+    entry.dataset.initialOpen = entry.open ? "true" : "false";
+  });
+
+  function updateSearch() {
+    const query = searchInput.value.toLowerCase().trim();
+    let visible = 0;
+
+    entries.forEach(entry => {
+      const title =
+        entry.querySelector("summary")?.textContent.toLowerCase() || "";
+      const alt =
+        entry.dataset.alt?.toLowerCase() || "";
+
+      const match =
+        !query ||
+        title.includes(query) ||
+        alt.includes(query);
+
+      entry.style.display = match ? "" : "none";
+
+      if (query && match) {
+        entry.open = true;
+      }
+
+      if (!query) {
+        entry.open = entry.dataset.initialOpen === "true";
+      }
+
+      if (match) visible++;
+    });
+
+    if (!query) {
+      info.textContent = `Menampilkan semua topik (${total}).`;
+    } else {
+      info.textContent =
+        `Hasil relevan (${visible}/${total}), dari ${total} topik.`;
+    }
+  }
+
+  searchInput.addEventListener("input", updateSearch);
+</script>
+</body>
+</html>
